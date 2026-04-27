@@ -1460,6 +1460,66 @@
             opacity: 0.8;
         }
 
+        /* About Section */
+        .about {
+            border-bottom: 2px solid var(--border);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .about-text {
+            padding: 60px 40px;
+            border-right: 2px solid var(--border);
+        }
+
+        .about-text h3 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--yellow);
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            color: #888;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-features {
+            display: flex;
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+        }
+
+        .about-feature .feature-icon {
+            color: var(--yellow);
+        }
+
+        .about-image {
+            padding: 60px 40px;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            .about-text {
+                border-right: none;
+                border-bottom: 2px solid var(--border);
+            }
+        }
+
 /* WhatsApp Button */
         .whatsapp-btn {
             position: fixed;
@@ -2223,9 +2283,10 @@
         <div class="header-inner">
             <a href="#" class="logo">MODO<span class="logo-accent">CODE</span></a>
             <nav>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#nosotros">Nosotros</a>
                 <a href="#servicios">Servicios</a>
                 <a href="#proyectos">Proyectos</a>
-                <a href="#proceso">Proceso</a>
                 <a href="#contacto">Contacto</a>
             </nav>
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
@@ -2237,9 +2298,9 @@
     </header>
 
     <nav class="mobile-nav" id="mobileNav">
+        <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#proceso">Proceso</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
@@ -2269,7 +2330,7 @@
                 </div>
                 <div class="hero-cta">
                     <a href="#contacto" class="btn btn-primary">Iniciar Proyecto</a>
-                    <a href="#servicios" class="btn">Ver Servicios</a>
+                    <a href="#servicios" class="btn" style="background:var(--white);color:var(--bg);border-color:var(--white);">Ver Servicios</a>
                 </div>
             </div>
         </div>
@@ -2338,6 +2399,40 @@
             </div>
         </div>
 </section>
+
+    <!-- Nosotros -->
+    <section class="about" id="nosotros">
+        <div class="section-header">
+            <h2 class="section-title"><span>QUIENES</span><br><span> Somos</span></h2>
+            <div class="section-desc">
+                Equipo local de San Juan con más de 5 años de experiencia.
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>MODOCODE</h3>
+                <p>Somos una agencia digital especializada en crear soluciones web y software para negocios. Nos diferencia nuestra rapidez de entrega y el compromiso con cada proyecto.</p>
+                <p>Estamos ubicados en San Juan, Argentina, y atendemos clientes en todo el país y el exterior.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Equipo local</span>
+                    </div>
+                    <div class="about-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Soporte directo</span>
+                    </div>
+                    <div class="about-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Entrega rápida</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="assets/campos.jpg" alt="MODOCODE Team" style="width:100%;height:300px;object-fit:cover;">
+            </div>
+        </div>
+    </section>
 
     <!-- Servicios -->
     <section class="services" id="servicios">
