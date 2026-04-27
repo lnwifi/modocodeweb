@@ -1506,6 +1506,67 @@
             color: var(--yellow);
         }
 
+        /* Success Section */
+        .success {
+            border-bottom: 2px solid var(--border);
+        }
+
+        .success-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .success-item {
+            border: 2px solid var(--border);
+            background: #111;
+        }
+
+        .success-image {
+            overflow: hidden;
+        }
+
+        .success-content {
+            padding: 20px;
+        }
+
+        .success-badge {
+            display: inline-block;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 8px;
+            background: var(--yellow);
+            color: var(--bg);
+            margin-bottom: 12px;
+        }
+
+        .success-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .success-result {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--yellow);
+            margin-bottom: 8px;
+        }
+
+        .success-content p {
+            font-size: 0.85rem;
+            color: #888;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .success-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .about-image {
             padding: 60px 40px;
         }
@@ -2570,6 +2631,51 @@
         </div>
     </section>
 
+    <!-- Casos de Éxito -->
+    <section class="success">
+        <div class="section-header">
+            <h2 class="section-title"><span>CASOS DE</span><br><span>ÉXITO</span></h2>
+            <div class="section-desc">
+                Resultados reales de nuestros clientes.
+            </div>
+        </div>
+        <div class="success-grid">
+            <div class="success-item">
+                <div class="success-image">
+                    <img src="assets/campos.jpg" alt="Campos Alimentos" style="width:100%;height:150px;object-fit:cover;">
+                </div>
+                <div class="success-content">
+                    <span class="success-badge">E-COMMERCE</span>
+                    <h3>Campos Alimentos</h3>
+                    <p class="success-result">+200% increase in online sales</p>
+                    <p>Tienda online con catálogo, carrito y pagos integrados.</p>
+                </div>
+            </div>
+            <div class="success-item">
+                <div class="success-image">
+                    <img src="assets/247-Logo-diseno-PC-OK-transpar.png" alt="247 San Juan" style="width:100%;height:150px;object-fit:contain;background:#111;">
+                </div>
+                <div class="success-content">
+                    <span class="success-badge">WEB CORPORATIVA</span>
+                    <h3>247 San Juan</h3>
+                    <p class="success-result">Entrega en 24hs</p>
+                    <p>Web profesional con diseño moderno.</p>
+                </div>
+            </div>
+            <div class="success-item">
+                <div class="success-image">
+                    <img src="assets/peto.png" alt="PetoClub" style="width:100%;height:150px;object-fit:contain;background:#111;">
+                </div>
+                <div class="success-content">
+                    <span class="success-badge">ERP + APP</span>
+                    <h3>PetoClub</h3>
+                    <p class="success-result">Sistema operativo</p>
+                    <p>Gestión integral + App móvil para clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section class="faq">
         <div class="section-header">
@@ -2657,19 +2763,21 @@
         <div class="footer-col">
             <h4>MODOCODE</h4>
             <p>Agencia de diseño web fundada por Lucas Navarro. Creamos experiencias digitales que transforman negocios.</p>
+            <a href="https://wa.me/542645854677" target="_blank" style="display:inline-block;margin-top:16px;padding:12px 20px;background:#25d366;color:#fff;text-decoration:none;font-size:0.85rem;">📱 Escribinos WhatsApp</a>
         </div>
         <div class="footer-col">
             <h4>Navegación</h4>
+            <a href="#nosotros">Nosotros</a>
             <a href="#servicios">Servicios</a>
             <a href="#proyectos">Proyectos</a>
-            <a href="#proceso">Proceso</a>
             <a href="#contacto">Contacto</a>
         </div>
         <div class="footer-col">
             <h4>Contacto</h4>
+            <a href="https://wa.me/542645854677">2645-854677</a>
             <a href="mailto:hola@modocode.studio">hola@modocode.studio</a>
         </div>
-        <p class="footer-copy">© 2026 MODOCODE. Fundada por Lucas Navarro. Todos los derechos reservados.</p>
+        <p class="footer-copy">© 2026 MODOCODE. Fundada por Lucas Navarro. San Juan, Argentina.</p>
     </footer>
 
     <!-- WhatsApp Button -->
