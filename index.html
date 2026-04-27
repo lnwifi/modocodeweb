@@ -261,15 +261,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('assets/campos.jpg');
             background-size: cover;
             background-position: center;
-            opacity: 0.4;
             transition: opacity 0.3s ease;
         }
 
         .work-item-image:hover .work-bg-image {
-            opacity: 0.6;
+            opacity: 0.8;
         }
 
         /* Work Link */
@@ -900,6 +898,7 @@
         .work-item-image {
             position: relative;
             overflow: hidden;
+            height: 120px;
         }
 
         .work-item-image .work-bg-image {
@@ -908,13 +907,31 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
             transition: all 0.4s ease;
         }
 
         .work-item:hover .work-bg-image {
-            transform: scale(1.05);
+            transform: none;
+        }
+
+        .campos-img {
+            background-image: url('assets/campos.jpg');
+            background-size: cover;
+        }
+
+        .logo-247 {
+            background-image: url('assets/247-Logo-diseno-PC-OK-transpar.png');
+            background-size: contain;
+            background-color: #111;
+        }
+
+        .peto-img {
+            background-image: url('assets/peto.png');
+            background-size: contain;
+            background-color: #111;
         }
 
         .work-item:not(.work-item-image) {
@@ -931,6 +948,8 @@
             stroke-width: 1;
             opacity: 0.4;
         }
+
+        
 
         .work-info {
             padding: 16px;
@@ -2205,7 +2224,6 @@
             <a href="#" class="logo">MODO<span class="logo-accent">CODE</span></a>
             <nav>
                 <a href="#servicios">Servicios</a>
-                <a href="#infraestructura">Infraestructura</a>
                 <a href="#proyectos">Proyectos</a>
                 <a href="#proceso">Proceso</a>
                 <a href="#contacto">Contacto</a>
@@ -2220,7 +2238,6 @@
 
     <nav class="mobile-nav" id="mobileNav">
         <a href="#servicios">Servicios</a>
-        <a href="#infraestructura">Infraestructura</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#proceso">Proceso</a>
         <a href="#contacto">Contacto</a>
@@ -2320,289 +2337,141 @@
                 <span class="trust-label">Compromiso</span>
             </div>
         </div>
-    </section>
+</section>
 
-    <div class="marquee">
-        <div class="marquee-track">
-            <span class="marquee-item">LANDING PAGES</span>
-            <span class="marquee-item">SAAS</span>
-            <span class="marquee-item">SISTEMAS</span>
-            <span class="marquee-item">INTELIGENCIA ARTIFICIAL</span>
-            <span class="marquee-item">UI/UX</span>
-            <span class="marquee-item">LANDING PAGES</span>
-            <span class="marquee-item">SAAS</span>
-            <span class="marquee-item">SISTEMAS</span>
-            <span class="marquee-item">INTELIGENCIA ARTIFICIAL</span>
-            <span class="marquee-item">UI/UX</span>
-        </div>
-    </div>
-
-    <!-- Clients -->
-    <section class="clients">
-        <p class="clients-label">Empresas de San Juan que ya confían en MODOCODE</p>
-        <div class="clients-grid">
-            <span class="client-logo">Campos Alimentos</span>
-            <span class="client-logo">247 San Juan</span>
-            <span class="client-logo">PetoClub</span>
-            <span class="client-logo">Grupo Sancor</span>
-            <span class="client-logo">Banco San Juan</span>
-            <span class="client-logo">Cuyo Shopping</span>
-        </div>
-    </section>
-
+    <!-- Servicios -->
     <section class="services" id="servicios">
         <div class="section-header">
-            <h2 class="section-title"><span>LO QUE</span><br><span>HACEMOS</span></h2>
+            <h2 class="section-title"><span>NUESTROS</span><br><span>SERVICIOS</span></h2>
             <div class="section-desc">
-                Soluciones digitales que hacen crecer tu negocio. Desde una landing hasta sistemas complejos.
+                Soluciones digitales que hacen crecer tu negocio.
             </div>
         </div>
         <div class="services-grid reveal-children">
             <div class="service-card">
                 <span class="service-num">01</span>
                 <h3 class="service-title">LANDING PAGES</h3>
-                <p class="service-desc">Tu página de ventas en 24hs. Diseños que convierten visitantes en clientes.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+                <p class="service-desc">Tu página de ventas en 24hs. Diseños que convierten.</p>
+                <a href="#contacto" class="service-cta">Desde $249.999 →</a>
             </div>
             <div class="service-card">
                 <span class="service-num">02</span>
                 <h3 class="service-title">SITIOS CORPORATIVOS</h3>
-                <p class="service-desc">Web profesional para tu empresa. Presencia online que genera confianza.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+                <p class="service-desc">Web profesional para tu empresa.</p>
+                <a href="#contacto" class="service-cta">Consultar →</a>
             </div>
             <div class="service-card">
                 <span class="service-num">03</span>
                 <h3 class="service-title">E-COMMERCE</h3>
-                <p class="service-desc">Tienda online completa con gestión de productos, pagos y envíos.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+                <p class="service-desc">Tienda online con pagos y envíos.</p>
+                <a href="#contacto" class="service-cta">Consultar →</a>
             </div>
             <div class="service-card">
                 <span class="service-num">04</span>
-                <h3 class="service-title">SAAS / WEB APPS</h3>
-                <p class="service-desc">Aplicaciones web escalables. Desde tu idea hasta producto listo para usar.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+                <h3 class="service-title">APP</h3>
+                <p class="service-desc">Aplicaciones móviles iOS y Android.</p>
+                <a href="#contacto" class="service-cta">Consultar →</a>
             </div>
             <div class="service-card">
                 <span class="service-num">05</span>
-                <h3 class="service-title">SISTEMAS DE GESTIÓN</h3>
-                <p class="service-desc">Software a medida para automatizar tu negocio. CRM, inventarios,facturación.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+                <h3 class="service-title">ERP</h3>
+                <p class="service-desc">Sistema de gestión empresarial.</p>
+                <a href="#contacto" class="service-cta">Consultar →</a>
             </div>
             <div class="service-card">
                 <span class="service-num">06</span>
-                <h3 class="service-title">MANTENIMIENTO</h3>
-                <p class="service-desc"> hosting, actualizaciones, backups y soporte mensual. Olvidate de tu web.</p>
-                <a href="#contacto" class="service-cta">Desde $15.000/mes →</a>
+                <h3 class="service-title">SAAS</h3>
+                <p class="service-desc">Software como servicio en la nube.</p>
+                <a href="#contacto" class="service-cta">Consultar →</a>
             </div>
             <div class="service-card">
                 <span class="service-num">07</span>
-                <h3 class="service-title">SEO</h3>
-                <p class="service-desc">Posicionamiento en Google. Aparécite primero cuando te buscan.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+                <h3 class="service-title">INTEGRACIONES IA</h3>
+                <p class="service-desc">Automatización con inteligencia artificial.</p>
+                <a href="#contacto" class="service-cta">Consultar →</a>
             </div>
             <div class="service-card">
                 <span class="service-num">08</span>
-                <h3 class="service-title">INTEGRACIÓN IA</h3>
-                <p class="service-desc">Automatizá tareas con inteligencia artificial. Chatbots, análisis y más.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
-            </div>
-            <div class="service-card">
-                <span class="service-num">09</span>
-                <h3 class="service-title">REDES E INFRAESTRUCTURA</h3>
-                <p class="service-desc">Configuración de redes, Mikrotik, Ubiquiti, WiFi para hoteles y restaurantes.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
-            </div>
-            <div class="service-card">
-                <span class="service-num">10</span>
-                <h3 class="service-title">HOTSPOTS Y WiFi</h3>
-                <p class="service-desc">Sistemas de WiFi para clientes. Hotspots con login, control de ancho de banda.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+                <h3 class="service-title">SISTEMAS A MEDIDA</h3>
+                <p class="service-desc">Software personalizado para tu negocio.</p>
+                <a href="#contacto" class="service-cta">Consultar →</a>
             </div>
         </div>
     </section>
 
-    <!-- Infraestrutura IT -->
-    <section class="services" id="infraestructura">
+    <!-- Proyectos -->
+    <section class="work" id="proyectos">
         <div class="section-header">
-            <h2 class="section-title"><span>INFRAESTRUCTURA</span><br><span>IT</span></h2>
+            <h2 class="section-title"><span>ÚLTIMOS</span><br><span>PROYECTOS</span></h2>
             <div class="section-desc">
-                Soluciones de networking y conectividad para tu negocio.
+                Trabajos recientes que hablan por sí solos.
             </div>
         </div>
-        <div class="services-grid reveal-children">
-            <div class="service-card">
-                <span class="service-num">01</span>
-                <h3 class="service-title">CONFIGURACIÓN DE REDES</h3>
-                <p class="service-desc">Redes cableadas e inalambricas para oficinas, comercios y empresas.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+        <div class="work-grid reveal-children">
+            <div class="work-item">
+                <img src="assets/campos.jpg" alt="Campos Alimentos" style="width:100%;height:120px;object-fit:cover;">
+                <div class="work-info">
+                    <h3>Campos Alimentos</h3>
+                    <p>E-commerce + Sistema ERP completo.</p>
+                    <span class="work-status terminado">Terminado</span>
+                </div>
             </div>
-            <div class="service-card">
-                <span class="service-num">02</span>
-                <h3 class="service-title">MIKROTIK</h3>
-                <p class="service-desc">Configuración de routers Mikrotik. Firewall, QoS, VPN y más.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+            <div class="work-item">
+                <img src="assets/247-Logo-diseno-PC-OK-transpar.png" alt="247 San Juan" style="width:100%;height:120px;object-fit:contain;background:#111;">
+                <div class="work-info">
+                    <h3>247 San Juan</h3>
+                    <p>Web corporativa + Landing.</p>
+                    <span class="work-status terminado">Terminado</span>
+                </div>
             </div>
-            <div class="service-card">
-                <span class="service-num">03</span>
-                <h3 class="service-title">UBIQUITI</h3>
-                <p class="service-desc">Equipos UniFi, puntos de acceso, switches y controladores.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
+            <div class="work-item">
+                <img src="assets/peto.png" alt="PetoClub" style="width:100%;height:120px;object-fit:contain;background:#111;">
+                <div class="work-info">
+                    <h3>PetoClub</h3>
+                    <p>Sistema de gestión + App.</p>
+                    <span class="work-status desarrollo">En Desarrollo</span>
+                </div>
             </div>
-            <div class="service-card">
-                <span class="service-num">04</span>
-                <h3 class="service-title">HOTSPOTS WiFi</h3>
-                <p class="service-desc">WiFi para hoteles, restaurantes y comercios. Portal captivo, cupones, redes sociales.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
-            </div>
-            <div class="service-card">
-                <span class="service-num">05</span>
-                <h3 class="service-title">CÁMARAS DE SEGURIDAD</h3>
-                <p class="service-desc">Sistemas de videovigilancia IP. Grabación local y cloud.</p>
-                <a href="#contacto" class="service-cta">Consultar precio →</a>
-            </div>
-            <div class="service-card">
-                <span class="service-num">06</span>
-                <h3 class="service-title">MANTENIMIENTO IT</h3>
-                <p class="service-desc">Soporte técnico, mantenimiento preventivo y correctivo.</p>
-                <a href="#contacto" class="service-cta">Desde $25.000/mes →</a>
+            <div class="work-item">
+                <div style="width:100%;height:120px;background:#222;display:flex;align-items:center;justify-content:center;font-size:2rem;">🎯</div>
+                <div class="work-info">
+                    <h3>Landing Page</h3>
+                    <p>Página de ventas en 24hs.</p>
+                    <span class="work-status terminado">Terminado</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Process -->
+    <!-- Proceso -->
     <section class="process" id="proceso">
         <div class="section-header">
-            <h2 class="section-title"><span>NUESTRO</span><br><span>PROCESO</span></h2>
+            <h2 class="section-title"><span>COMO</span><br><span>TRABAJAMOS</span></h2>
             <div class="section-desc">
-                Metodología probada para entregar proyectos de alta calidad en tiempo record.
+                Proceso claro y sin vueltas.
             </div>
         </div>
         <div class="process-grid reveal-children">
             <div class="process-step">
                 <span class="process-num">01</span>
-                <h3 class="process-title">DESCUBRIMIENTO</h3>
-                <p class="process-desc">Analizamos tu negocio, objetivos y competencia para definir la estrategia digital.</p>
+                <h3 class="process-title">CONTACTO</h3>
+                <p class="process-desc">Hablamos de tu proyecto.</p>
             </div>
             <div class="process-step">
                 <span class="process-num">02</span>
-                <h3 class="process-title">DISEÑO</h3>
-                <p class="process-desc">Creamos prototipos y mockups hasta perfeccionar cada detalle de la experiencia.</p>
+                <h3 class="process-title">PRESUPUESTO</h3>
+                <p class="process-desc">Te mandamos la propuestas.</p>
             </div>
             <div class="process-step">
                 <span class="process-num">03</span>
                 <h3 class="process-title">DESARROLLO</h3>
-                <p class="process-desc">Implementamos el código con las mejores prácticas y tecnologías modernas.</p>
+                <p class="process-desc">Tu proyecto en tiempo record.</p>
             </div>
             <div class="process-step">
                 <span class="process-num">04</span>
-                <h3 class="process-title">LANZAMIENTO</h3>
-                <p class="process-desc">Desplegamos, optimizamos y brindamos soporte continuo para tu crecimiento.</p>
+                <h3 class="process-title">ENTREGA</h3>
+                <p class="process-desc">Tu proyecto listo para usar.</p>
             </div>
-</div>
-    </section>
-
-    <section class="work" id="proyectos">
-        <div class="section-header">
-            <h2 class="section-title"><span>PROYECTOS</span><br><span>RECIENTES</span></h2>
-            <div class="section-desc">
-                Algunos de nuestros últimos trabajos. Cada proyecto representa un desafío único superado.
-            </div>
-        </div>
-        <div class="work-grid reveal-children">
-            <div class="work-item work-item-image">
-                <div class="work-bg-image"></div>
-                <a href="https://camposalimentos.com.ar" target="_blank" class="work-link"></a>
-                <div class="work-info">
-                    <p class="work-cat">E-commerce + ERP</p>
-                    <h3 class="work-title">Campos Alimentos</h3>
-                    <p class="work-desc">Tienda online y sistema de gestión.</p>
-                    <span class="work-status terminado">Terminado</span>
-                </div>
-            </div>
-            <div class="work-item work-item-image">
-                <div class="work-bg-image" style="background-image: url('assets/247-Logo-diseno-PC-OK-transpar.png'); background-size: 60% auto; background-repeat: no-repeat; background-position: center; background-color: #fff;"></div>
-                <a href="https://247sanjuan.com.ar" target="_blank" class="work-link"></a>
-                <div class="work-info">
-                    <p class="work-cat">Diario Digital</p>
-                    <h3 class="work-title">247sanjuan</h3>
-                    <p class="work-desc">Portal de noticias y contenido.</p>
-                    <span class="work-status terminado">Terminado</span>
-                </div>
-            </div>
-            <div class="work-item work-item-image">
-                <div class="work-bg-image" style="background-image: url('assets/peto.png'); background-size: 50% auto; background-repeat: no-repeat; background-position: center;"></div>
-                <a href="https://petoclub.com.ar" target="_blank" class="work-link"></a>
-                <div class="work-info">
-                    <p class="work-cat">APP para Mascotas</p>
-                    <h3 class="work-title">PetoClub</h3>
-                    <p class="work-desc">Red social para mascotas.</p>
-                    <span class="work-status terminado">Terminado</span>
-                </div>
-            </div>
-</div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="section-header">
-            <h2 class="section-title"><span>LO QUE</span><br><span>DICEN</span></h2>
-            <div class="section-desc">
-                Clientes satisfechos de San Juan.
-            </div>
-        </div>
-        <div class="testimonials-grid reveal-children">
-            <div class="testimonial">
-                <span class="testimonial-quote">"</span>
-                <p class="testimonial-text">Nuestra tienda online aumento las ventas un 200% en 2 meses. El equipo entendió exactamente lo que necesitábamos.</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">CA</div>
-                    <div class="testimonial-info">
-                        <h4>Carlos Alberto</h4>
-                        <p>Campos Alimentos</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <span class="testimonial-quote">"</span>
-                <p class="testimonial-text">Nos entregan en tiempo record. Nuestra web estava lista en 24hs. Increíble atención y profesionalismo.</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">LM</div>
-                    <div class="testimonial-info">
-                        <h4>Laura Martínez</h4>
-                        <p>247 San Juan</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial">
-                <span class="testimonial-quote">"</span>
-                <p class="testimonial-text">El sistema de gestión que desarrollaron optimizó toda nuestra operación. No puedo imaginar volver atrás.</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">GP</div>
-                    <div class="testimonial-info">
-                        <h4>Gabriel Pérez</h4>
-                        <p>PetoClub</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="stats" id="stats">
-        <div class="stat">
-            <h2 class="stat-value">15+</h2>
-            <p class="stat-label">Proyectos Entregados</p>
-        </div>
-        <div class="stat">
-            <h2 class="stat-value">100%</h2>
-            <p class="stat-label">Clientes Satisfechos</p>
-        </div>
-        <div class="stat">
-            <h2 class="stat-value">15</h2>
-            <p class="stat-label">Años de Experiencia</p>
-        </div>
-        <div class="stat">
-            <h2 class="stat-value">24h</h2>
-            <p class="stat-label">Tiempo de Entrega</p>
         </div>
     </section>
 
@@ -2611,42 +2480,42 @@
         <div class="section-header">
             <h2 class="section-title"><span>PREGUNTAS</span><br><span>FRECUENTES</span></h2>
             <div class="section-desc">
-                Todo lo que necesitas saber antes de trabajar con nosotros.
+                Respuestas rápidas a dudas comunes.
             </div>
         </div>
-        <div class="faq-list">
+        <div class="faq-list reveal-children">
             <div class="faq-item">
-                <button class="faq-question">¿Cuánto cuesta un proyecto?</button>
+                <button class="faq-question">¿Cuánto tiempo tarda un proyecto?</button>
                 <div class="faq-answer">
-                    <p>Cada proyecto es único y su precio depende de la complejidad, funcionalidades y plazos. Ofrecemos presupuestos personalizados después de entender tu proyecto. Agenda una llamada y te presentamos una propuesta sin compromiso.</p>
+                    <p>Landing pages en 24hs. Sitios web en 5-7 días. E-commerce y sistemas en 2-4 semanas dependiendo la complejidad.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question">¿En qué tiempo entregan el proyecto?</button>
+                <button class="faq-question">¿Necesito pagar todo por advance?</button>
                 <div class="faq-answer">
-                    <p>Los tiempos varían según la complejidad. Landing pages: 2-3 semanas. Plataformas SAAS: 4-8 semanas. Sistemas de gestión: 6-12 semanas. Siempre definimos plazos realistas desde el inicio.</p>
+                    <p>Aceptamos 50% para iniciar y 50% al entrega. También podés pagar en cuotas según el proyecto.</p>
                 </div>
             </div>
             <div class="faq-item">
-                <button class="faq-question">¿Ofrecen soporte post-lanzamiento?</button>
+                <button class="faq-question">¿Incluyen hosting y dominio?</button>
                 <div class="faq-answer">
-                    <p>Sí, todos nuestros proyectos incluyen período de soporte gratuito. Además ofrecemos planes de mantenimiento mensual para actualizaciones, mejoras y soporte técnico continuo.</p>
+                    <p>El dominio el primer año está incluido en landing pages. Hosting propio o te pasamos el alta para que pagues directamente.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Dan soporte después de entregar?</button>
+                <div class="faq-answer">
+                    <p>Sí, tenemos planes de mantenimiento con cambios, actualizaciones y soporte.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <button class="faq-question">¿Trabajan con clientes internacionales?</button>
                 <div class="faq-answer">
-                    <p>Absolutamente. Trabajamos con clientes de América, Europa y Asia. Comunicamos en español e inglés, adaptamos zonas horarias y aceptamos pagos internacionales.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">¿Qué tecnologías usan?</button>
-                <div class="faq-answer">
-                    <p>Usamos las tecnologías más modernas según cada proyecto: React, Next.js, Vue, Node.js, Python, TypeScript, PostgreSQL, MongoDB, AWS, Vercel, y más. Siempre choosing the best tool for the job.</p>
+                    <p>Absolutamente. Trabajamos con clientes de América, Europa y Asia. Comunicamos en español e inglés y aceptamos pagos internacionales.</p>
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
     <section class="contact" id="contacto">
         <div class="contact-text">
@@ -2697,7 +2566,6 @@
         <div class="footer-col">
             <h4>Navegación</h4>
             <a href="#servicios">Servicios</a>
-            <a href="#infraestructura">Infraestructura</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#proceso">Proceso</a>
             <a href="#contacto">Contacto</a>
